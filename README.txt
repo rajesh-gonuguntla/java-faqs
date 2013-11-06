@@ -31,4 +31,31 @@ true true true true false true
 
 
 
+Question 2) Write output & justify briefly.
+
+
+class Test {
+public static void main(String[] args) {
+	int i = 1000000;
+	System.out.println(i * i);
+	long l = i;
+	System.out.println(l * l);
+	System.out.println(20296 / (l - i));
+	}
+}
+
+Answer )
+
+727379968
+1000000000000
+and then encounters an ArithmeticException in the division by l - i, because l
+- i is zero. The first multiplication is performed in 32-bit precision, whereas the second
+multiplication is a long multiplication. The value -727379968 is the decimal value of the
+low 32 bits of the mathematical result, 1000000000000, which is a value too large for
+type int.
+
+
+Question 3)
+
+
 
