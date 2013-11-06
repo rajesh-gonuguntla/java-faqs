@@ -55,7 +55,40 @@ low 32 bits of the mathematical result, 1000000000000, which is a value too larg
 type int.
 
 
-Question 3)
+Question 3) Write output, justify briefly
+
+package TypeVarMembers;
+class C {
+	public void mC1()
+	protected void mC2()
+	void mCDefault()
+	private void mC3()
+}
+
+interface I {
+	void mI();
+}
+
+class CT extends C implements I {
+	public void mI() {}
+}
+
+class Test {
+<T extends C & I> void test(T t) {
+	t.mI();
+
+	t.mC1();
+	
+	t.mC2();
+	t.mCDefault();
+	
+	t.mC3();
+	
+}
+}
+
+Q4) 
+
 
 
 
