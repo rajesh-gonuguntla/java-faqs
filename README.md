@@ -28,5 +28,7 @@ public class Other { public static String hello = "Hello"; }
 Answer )
 true true true true false true
 
+=======
+>>>>>>> b603ecd4e95bf92f09978ea858353a62799ad508
 
 
